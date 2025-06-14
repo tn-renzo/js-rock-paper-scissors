@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="left">Rock Paper Scissors</h1>
+      <div class="right">
+        <div class="rockButton">
+          <button onclick="pickRock()">
+            <img class="rockButtonImage" src="assets/rock.png" alt="Rock" />
+          </button>
+        </div>
+        <div class="paperButton">
+          <button onclick="pickPaper()">
+            <img
+              class="paperButtonImage"
+              src="assets/newspaper.png"
+              alt="Paper"
+            />
+          </button>
+        </div>
+
+        <div class="scissorButton">
+          <button onclick="pickScissors()">
+            <img
+              class="scissorButtonImage"
+              src="assets/Scissors.png"
+              alt="Scissors"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
