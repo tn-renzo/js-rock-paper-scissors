@@ -21,11 +21,10 @@ body {
 }
 
 .left {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   max-width: 400px;
   font-style: bold;
-  font-size: 48px;
 }
 
 .right {
