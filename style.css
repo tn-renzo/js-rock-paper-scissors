@@ -13,18 +13,15 @@ body {
 
 .main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 250px;
   gap: 80px;
 }
 
 .left {
   font-size: 3rem;
   text-align: center;
-  max-width: 400px;
-  font-style: bold;
 }
 
 .right {
