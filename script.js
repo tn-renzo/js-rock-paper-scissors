@@ -19,9 +19,9 @@ function pickRock() {
     rockResult = "You Win";
   }
 
-  alert(
-    `You picked Rock. The computer picked ${rockComputerMove}. ${rockResult}`
-  );
+  const rockOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Rock</span>. The <span class="decoration">computer</span> picked <span class="decoration">${rockComputerMove}</span>. The Result is: <span class="decoration">${rockResult}</span>`; // make output string
+
+  document.getElementById("output").innerHTML = rockOutputStr; // pass the output string into the html tag with id "output"
 }
 
 function pickPaper() {
@@ -45,9 +45,9 @@ function pickPaper() {
     paperResult = "You Lose";
   }
 
-  alert(
-    `You picked Paper. The computer picked ${paperComputerMove}. ${paperResult}`
-  );
+  const paperOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Paper</span>. The <span class="decoration">computer</span> picked <span class="decoration">${paperComputerMove}</span>. The Result is: <span class="decoration">${paperResult}</span>`; // make output string
+
+  document.getElementById("output").innerHTML = paperOutputStr; // pass the output string into the html tag with id "output"
 }
 
 function pickScissors() {
@@ -71,7 +71,7 @@ function pickScissors() {
     scissorsResult = "Tie";
   }
 
-  alert(
-    `You picked Scissors. The computer picked ${scissorsComputerMove}. ${scissorsResult}`
-  );
+  const scissorsOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Scissors</span>. The <span class="decoration">computer</span> picked <span class="decoration">${scissorsComputerMove}</span>. The Result is: <span class="decoration">${scissorsResult}</span>`; // make output string
+
+  document.getElementById("output").innerHTML = scissorsOutputStr; // pass the output string into the html tag with id "output"
 }
