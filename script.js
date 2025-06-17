@@ -12,11 +12,11 @@ function pickRock() {
   }
 
   if (rockComputerMove === "Rock") {
-    rockResult = "It's a Tie";
+    rockResult = "Tie.";
   } else if (rockComputerMove === "Paper") {
-    rockResult = "You Lose";
+    rockResult = "You Lose.";
   } else {
-    rockResult = "You Win";
+    rockResult = "You Win.";
   }
 
   const rockOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Rock</span>. The <span class="decoration">computer</span> picked <span class="decoration">${rockComputerMove}</span>. The Result is: <span class="decoration">${rockResult}</span>`; // make output string
@@ -38,11 +38,11 @@ function pickPaper() {
   }
 
   if (paperComputerMove === "Rock") {
-    paperResult = "You Win";
+    paperResult = "You Win.";
   } else if (paperComputerMove === "Paper") {
-    paperResult = "Tie";
+    paperResult = "Tie.";
   } else {
-    paperResult = "You Lose";
+    paperResult = "You Lose.";
   }
 
   const paperOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Paper</span>. The <span class="decoration">computer</span> picked <span class="decoration">${paperComputerMove}</span>. The Result is: <span class="decoration">${paperResult}</span>`; // make output string
@@ -64,11 +64,11 @@ function pickScissors() {
   }
 
   if (scissorsComputerMove === "Rock") {
-    scissorsResult = "You Lose";
+    scissorsResult = "You Lose.";
   } else if (scissorsComputerMove === "Paper") {
-    scissorsResult = "You Win";
+    scissorsResult = "You Win.";
   } else {
-    scissorsResult = "Tie";
+    scissorsResult = "Tie.";
   }
 
   const scissorsOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Scissors</span>. The <span class="decoration">computer</span> picked <span class="decoration">${scissorsComputerMove}</span>. The Result is: <span class="decoration">${scissorsResult}</span>`; // make output string
