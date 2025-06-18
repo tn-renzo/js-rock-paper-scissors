@@ -71,7 +71,7 @@ function pickScissors() {
     scissorsResult = "Tie.";
   }
 
-  const scissorsOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Scissors</span>. The <span class="decoration">computer</span> picked <span class="decoration">${scissorsComputerMove}</span>. The Result is: <span class="decoration">${scissorsResult}</span>`; // make output string
+  const scissorsOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Scissors</span>. The <span class="decoration">computer</span> picked <span class="decoration">${scissorsComputerMove}</span>. The Result is: <span class="decoration">${scissorsResult}</span>`; // create output string
 
   document.getElementById("output").innerHTML = scissorsOutputStr; // pass the output string into the html tag with id "output"
 }
