@@ -7,8 +7,41 @@
 body {
   height: 100vh;
   font-family: "JetBrains Mono", monospace;
-  background-color: #333;
-  color: #f0f0f0;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+  background: #fbfef9;
+  color: #191923;
+}
+
+body.dark {
+  background: #00171f;
+  color: #ed254e;
+}
+
+.themeSwitcher {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 36px;
+  width: 36px;
+  margin: 8px;
+}
+
+.themeSwitcherButton {
+  border: none;
+  border-radius: 16px;
+  background-color: transparent;
+}
+
+.themeSwitcherImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .container {
@@ -47,21 +80,21 @@ body {
   text-decoration: underline;
 }
 
-button {
+.gameButtons {
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
-  border: 2px solid #333;
-  background-color: #f0f0f0;
+  border: 2px none;
+  background-color: #dbdbdb;
   transition: background-color 0.2s ease, transform 0.1s ease;
   border-radius: 24px;
 }
 
-button:hover {
+.gameButtons:hover {
   background-color: #ddd;
   transform: translateY(-2px);
 }
 
-button:active {
+.gameButtons:active {
   transform: translateY(0);
 }

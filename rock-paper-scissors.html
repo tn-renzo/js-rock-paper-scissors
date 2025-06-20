@@ -16,18 +16,28 @@
     <div class="container">
       <h1 class="top">Rock Paper Scissors</h1>
       <div class="bottom">
-        <button onclick="pickRock()">
+        <button class="gameButtons" onclick="pickRock()">
           <img class="image-choice" src="assets/rock.png" alt="Rock" />
         </button>
-        <button onclick="pickPaper()">
+        <button class="gameButtons" onclick="pickPaper()">
           <img class="image-choice" src="assets/newspaper.png" alt="Paper" />
         </button>
-        <button onclick="pickScissors()">
+        <button class="gameButtons" onclick="pickScissors()">
           <img class="image-choice" src="assets/Scissors.png" alt="Scissors" />
         </button>
       </div>
       <div class="output">
         <p id="output">The result will be printed here.</p>
+      </div>
+      <div class="themeSwitcher">
+        <button class="themeSwitcherButton" onclick="toggleTheme()">
+          <img
+            class="themeSwitcherImage"
+            alt="Change Theme"
+            id="themeIcon"
+            src="assets/icons/switcherDark.svg"
+          />
+        </button>
       </div>
     </div>
   </body>

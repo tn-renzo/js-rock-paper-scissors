@@ -1,3 +1,4 @@
+// game functions
 function pickRock() {
   const rockRandomNumber = Math.random();
   let rockComputerMove = "";
@@ -74,4 +75,37 @@ function pickScissors() {
   const scissorsOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Scissors</span>. The <span class="decoration">computer</span> picked <span class="decoration">${scissorsComputerMove}</span>. The Result is: <span class="decoration">${scissorsResult}</span>`; // create output string
 
   document.getElementById("output").innerHTML = scissorsOutputStr; // pass the output string into the html tag with id "output"
+}
+
+// theme setup and toggle
+window.addEventListener("DOMContentLoaded", () => {
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    document.body.className = "dark";
+  } else {
+    document.body.className = "light";
+  }
+
+  const body = document.body;
+  const icon = document.getElementById("themeIcon");
+
+  if (body.classList.contains("dark")) {
+    icon.src = "assets/icons/switcherLight.svg";
+  } else {
+    icon.src = "assets/icons/switcherDark.svg";
+  }
+});
+
+function toggleTheme() {
+  const body = document.body;
+  const icon = document.getElementById("themeIcon");
+
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+    body.classList.add("light");
+    icon.src = "assets/icons/switcherDark.svg"; // Icon for light mode
+  } else {
+    body.classList.remove("light");
+    body.classList.add("dark");
+    icon.src = "assets/icons/switcherLight.svg"; // Icon for dark mode
+  }
 }
