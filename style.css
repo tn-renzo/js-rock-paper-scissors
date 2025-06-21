@@ -22,10 +22,10 @@ body.light {
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24;
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
   font-size: 48px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -79,6 +79,7 @@ body.dark .material-symbols-outlined {
 
 .decoration {
   text-decoration: underline;
+  font-style: italic;
 }
 
 .image-choice {
