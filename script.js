@@ -1,8 +1,8 @@
 // game functions
 function pickRock() {
   const rockRandomNumber = Math.random();
-  let rockComputerMove = "";
-  let rockResult = "";
+  let rockComputerMove;
+  let rockResult;
 
   if (rockRandomNumber < 1 / 3) {
     rockComputerMove = "Rock";
@@ -20,15 +20,15 @@ function pickRock() {
     rockResult = "You Win.";
   }
 
-  const rockOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Rock</span>. The <span class="decoration">computer</span> picked <span class="decoration">${rockComputerMove}</span>. The Result is: <span class="decoration">${rockResult}</span>`; // make output string
 
-  document.getElementById("output").innerHTML = rockOutputStr; // pass the output string into the html tag with id "output"
+   // make output string
+  document.getElementById("output").innerHTML = `<span class="decoration">You</span> picked <span class="decoration">Rock</span>. The <span class="decoration">computer</span> picked <span class="decoration">${rockComputerMove}</span>. The Result is: <span class="decoration">${rockResult}</span>`; // pass the output string into the html tag with id "output"
 }
 
 function pickPaper() {
   const paperRandomNumber = Math.random();
-  let paperComputerMove = "";
-  let paperResult = "";
+  let paperComputerMove;
+  let paperResult;
 
   if (paperRandomNumber < 1 / 3) {
     paperComputerMove = "Rock";
@@ -46,15 +46,15 @@ function pickPaper() {
     paperResult = "You Lose.";
   }
 
-  const paperOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Paper</span>. The <span class="decoration">computer</span> picked <span class="decoration">${paperComputerMove}</span>. The Result is: <span class="decoration">${paperResult}</span>`; // make output string
 
-  document.getElementById("output").innerHTML = paperOutputStr; // pass the output string into the html tag with id "output"
+   // make output string
+  document.getElementById("output").innerHTML = `<span class="decoration">You</span> picked <span class="decoration">Paper</span>. The <span class="decoration">computer</span> picked <span class="decoration">${paperComputerMove}</span>. The Result is: <span class="decoration">${paperResult}</span>`; // pass the output string into the html tag with id "output"
 }
 
 function pickScissors() {
   const scissorsRandomNumber = Math.random();
-  let scissorsComputerMove = "";
-  let scissorsResult = "";
+  let scissorsComputerMove;
+  let scissorsResult;
 
   if (scissorsRandomNumber < 1 / 3) {
     scissorsComputerMove = "Rock";
@@ -72,9 +72,9 @@ function pickScissors() {
     scissorsResult = "Tie.";
   }
 
-  const scissorsOutputStr = `<span class="decoration">You</span> picked <span class="decoration">Scissors</span>. The <span class="decoration">computer</span> picked <span class="decoration">${scissorsComputerMove}</span>. The Result is: <span class="decoration">${scissorsResult}</span>`; // create output string
 
-  document.getElementById("output").innerHTML = scissorsOutputStr; // pass the output string into the html tag with id "output"
+   // create output string
+  document.getElementById("output").innerHTML = `<span class="decoration">You</span> picked <span class="decoration">Scissors</span>. The <span class="decoration">computer</span> picked <span class="decoration">${scissorsComputerMove}</span>. The Result is: <span class="decoration">${scissorsResult}</span>`; // pass the output string into the html tag with id "output"
 }
 
 // theme setup and toggle
@@ -95,17 +95,9 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// theme switcher
 function toggleTheme() {
   const body = document.body;
-  const icon = document.getElementById("themeIcon");
-
-  if (body.classList.contains("dark")) {
-    body.classList.remove("dark");
-    body.classList.add("light");
-    icon.src = "assets/icons/switcherDark.svg"; // Icon for light mode
-  } else {
-    body.classList.remove("light");
-    body.classList.add("dark");
-    icon.src = "assets/icons/switcherLight.svg"; // Icon for dark mode
-  }
+  body.classList.toggle("dark");
+  body.classList.toggle("light");
 }

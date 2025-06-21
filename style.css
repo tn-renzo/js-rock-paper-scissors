@@ -7,41 +7,49 @@
 body {
   height: 100vh;
   font-family: "JetBrains Mono", monospace;
-  transition: background 0.3s, color 0.3s;
-}
-
-body.light {
-  background: #fbfef9;
-  color: #191923;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 body.dark {
-  background: #00171f;
-  color: #ed254e;
+  background-color: #282c34;
+  color: white;
 }
 
-.themeSwitcher {
+body.light {
+  background-color: #e2e2e2;
+  color: black;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: 48px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+body.light .material-symbols-outlined {
+  color: black;
+}
+
+body.dark .material-symbols-outlined {
+  color: white;
+}
+
+.themeButton {
   position: absolute;
   left: 0%;
   top: 0%;
   height: 36px;
   width: 36px;
   margin: 8px;
-}
-
-.themeSwitcherButton {
-  border: none;
-  border-radius: 16px;
-  background-color: transparent;
-}
-
-.themeSwitcherImage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 .container {
@@ -64,13 +72,6 @@ body.dark {
   gap: 15px;
 }
 
-.image-choice {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  pointer-events: none;
-}
-
 .output {
   font-size: 18px;
   max-width: 90%;
@@ -80,18 +81,31 @@ body.dark {
   text-decoration: underline;
 }
 
+.image-choice {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+body.light .gameButtons {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+body.dark .gameButtons {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
 .gameButtons {
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
   border: 2px none;
-  background-color: #dbdbdb;
   transition: background-color 0.2s ease, transform 0.1s ease;
   border-radius: 24px;
 }
 
 .gameButtons:hover {
-  background-color: #ddd;
   transform: translateY(-2px);
 }
 
