@@ -45,8 +45,8 @@ body.dark .material-symbols-outlined {
 
 .themeButton {
   position: absolute;
-  left: 0%;
-  top: 0%;
+  left: 0;
+  top: 0;
   height: 36px;
   width: 36px;
   margin: 8px;
