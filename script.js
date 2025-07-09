@@ -20,9 +20,10 @@ function pickRock() {
     rockResult = "You Win.";
   }
 
-
-   // make output string
-  document.getElementById("output").innerHTML = `<span class="decoration">You</span> picked <span class="decoration">Rock</span>. The <span class="decoration">computer</span> picked <span class="decoration">${rockComputerMove}</span>. The Result is: <span class="decoration">${rockResult}</span>`; // pass the output string into the html tag with id "output"
+  // make output string
+  document.getElementById(
+    "output"
+  ).innerHTML = `<span class="decoration">You</span> picked <span class="decoration">Rock</span>. The <span class="decoration">computer</span> picked <span class="decoration">${rockComputerMove}</span>. The Result is: <span class="decoration">${rockResult}</span>`; // pass the output string into the html tag with id "output"
 }
 
 function pickPaper() {
@@ -46,9 +47,10 @@ function pickPaper() {
     paperResult = "You Lose.";
   }
 
-
-   // make output string
-  document.getElementById("output").innerHTML = `<span class="decoration">You</span> picked <span class="decoration">Paper</span>. The <span class="decoration">computer</span> picked <span class="decoration">${paperComputerMove}</span>. The Result is: <span class="decoration">${paperResult}</span>`; // pass the output string into the html tag with id "output"
+  // make output string
+  document.getElementById(
+    "output"
+  ).innerHTML = `<span class="decoration">You</span> picked <span class="decoration">Paper</span>. The <span class="decoration">computer</span> picked <span class="decoration">${paperComputerMove}</span>. The Result is: <span class="decoration">${paperResult}</span>`; // pass the output string into the html tag with id "output"
 }
 
 function pickScissors() {
@@ -72,9 +74,10 @@ function pickScissors() {
     scissorsResult = "Tie.";
   }
 
-
-   // create output string
-  document.getElementById("output").innerHTML = `<span class="decoration">You</span> picked <span class="decoration">Scissors</span>. The <span class="decoration">computer</span> picked <span class="decoration">${scissorsComputerMove}</span>. The Result is: <span class="decoration">${scissorsResult}</span>`; // pass the output string into the html tag with id "output"
+  // create output string
+  document.getElementById(
+    "output"
+  ).innerHTML = `<span class="decoration">You</span> picked <span class="decoration">Scissors</span>. The <span class="decoration">computer</span> picked <span class="decoration">${scissorsComputerMove}</span>. The Result is: <span class="decoration">${scissorsResult}</span>`; // pass the output string into the html tag with id "output"
 }
 
 // theme setup and toggle
